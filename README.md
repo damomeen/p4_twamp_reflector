@@ -1,8 +1,8 @@
 p4_twamp_reflector
 =============
 
-p4_twamp_reflector is the TWAMP reflector implementation in P4 language for bmv2 togather with TWAMP control server implemented in Python (see RFC 5357 Two-Way Active Measurement Protocol). 
-p4_twamp_reflector uses [p4app](https://github.com/p4lang/p4app) for build, run and test using mininet with bmv2 switches. 
+p4_twamp_reflector is the TWAMP reflector implementation (see RFC 5357 Two-Way Active Measurement Protocol) in the P4 language for bmv2 software switch. It also contains the TWAMP control server implemented in Python. 
+p4_twamp_reflector uses [p4app](https://github.com/p4lang/p4app) containing mininet with bmv2 switches for build, run and test. 
 
 More information about the design of p4_twamp_reflector can be found in an presentation in /docs/ folder.
 
@@ -21,13 +21,13 @@ Installation
 Usage
 -----
 
-To start a P4 switch with TWAMP reflector and TWAMP control server just run:
+To start a P4 switch with the TWAMP reflector and the TWAMP control server just run:
 
 ```
 ./start.sh
 ```
 
-To run TWAMP client (tested with two different TWAMP clients: twampy or twping) run within mininet prompt:
+To run the TWAMP client (you can choose twampy or twping client implementation) run within mininet prompt:
 
 ```
 h1 sh /tmp/twampy.sh
@@ -40,7 +40,7 @@ h1 sh /tmp/twping.sh
 
 Testbed and implementation details
 ----------------------------------
-Our emulation environment is composed by one P4 switches emulated with Mininet. The switch connects to a single host.
+Our emulation environment is composed by one P4 switch emulated with Mininet. The switch connects to a single host.
 
 The debug mode for the switch can be enabled by using:
 
